@@ -8,10 +8,16 @@
             var robotArm = new RobotArm(canvas);
 
             // Het level inladen
-            robotArm.loadLevel("exercise 1");
+            robotArm.loadLevel("exercise 12");
             robotArm.speed= 500
             // Jou instructies volgen hier
-          
+            robotArm.grab();
+                 for (var i = 0; i < 10; i++) {
+                     robotArm.moveRight();
+                 }
+                 robotArm.drop();
+                 robotArm.moveLeft();
+
 
 
             // De door jou opgegeven instructies uitvoeren

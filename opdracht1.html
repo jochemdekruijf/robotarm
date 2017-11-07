@@ -9,11 +9,12 @@
 
             // Het level inladen
             robotArm.loadLevel("exercise 1");
-            robotArm.speed= 500
+            robotArm.speed = 300
             // Jou instructies volgen hier
-          
-
-
+            robotArm.moveRight();
+            robotArm.grab();
+            robotArm.moveLeft();
+            robotArm.drop();
             // De door jou opgegeven instructies uitvoeren
             robotArm.run();
         </script>
